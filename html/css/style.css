@@ -1274,6 +1274,19 @@ body.opened .kura_tm_hero .down{
 	position: relative;
 	z-index: 3;
 }
+
+.kura_tm_skills .about_me{
+	width: 100%;
+	float: left;
+	height: auto;
+	clear: both;
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 .kura_tm_skills .left{
 	width: 60%;
 	padding-right: 200px;
