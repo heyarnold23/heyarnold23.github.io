@@ -1968,6 +1968,23 @@ body.opened .kura_tm_hero .down{
 	font-weight: bold;
 }
 
+.aboutMeContainer{
+	display: flex;
+	height: auto;
+	background-color: black;
+	padding: 15px;
+	border-radius: 5px;
+	flex-direction: column;
+}
+
+.aboutMeText{
+	display: flex;
+	font-family: "Poppins";
+	width: 95%;
+	color: #ff4522;
+	border-bottom: 1px solid grey;
+}
+
 /*---------------------------------------------------*/
 /*	13) KURA MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
