@@ -940,7 +940,7 @@ body.opened .kura_tm_hero .down{
 	position: absolute;
 	z-index: 2;
 	bottom: 41px;
-	left: 49px;
+	left: 30px;
 	opacity: 0;
 	visibility: hidden;
 
