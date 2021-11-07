@@ -48,6 +48,9 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
+a{
+	text-decoration: none;
+}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #6f6f6f;
 }
@@ -933,7 +936,7 @@ body.opened .kura_tm_hero .down{
 	        transition: all .3s ease;
 }
 .kura_tm_portfolio .portfolio_list .list_inner:hover .overlay{
-	opacity: 1;
+	opacity: 0.9;
 	visibility: visible;
 }
 .kura_tm_portfolio .portfolio_list .details{
