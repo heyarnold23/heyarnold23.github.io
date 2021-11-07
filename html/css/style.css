@@ -48,6 +48,18 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
+img.git{
+	width: 6%;
+	height: 6%;
+	/* width: 30px; */
+	/* height: 30px; */
+    color: #ff4522;
+}
+img.linkedin{
+	width: 13%;
+	height: 13%;
+    color: #ff4522;
+}
 a{
 	text-decoration: none;
 }
@@ -1777,6 +1789,28 @@ body.opened .kura_tm_hero .down{
 	position: relative;
 	padding-left: 30px;
 }
+.kura_tm_contact .short ul li .icons{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	/* padding-left: 20px; */
+	display: flex;
+	gap: 30px;
+}
+
+.kura_tm_contact .short ul li .list_inner .ico{
+	position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+	margin-top: -1px;
+    transform: translateY(-50%);
+    color: #ff4522;
+}
+
 .kura_tm_contact .short ul li .list_inner .svg{
 	position: absolute;
     left: 0px;
