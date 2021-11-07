@@ -8,9 +8,9 @@
 jQuery(document).ready(function(){
 
 	"use strict";
-	
+
 	// here all ready functions
-	
+
 	kura_tm_nav_bg();
 	kura_tm_trigger_menu();
 	kura_tm_down();
@@ -25,11 +25,11 @@ jQuery(document).ready(function(){
 	kura_tm_contact_form();
 	kura_tm_swiper();
 	kura_tm_jarallax();
-	
+
 	jQuery(window).load('body', function(){
 		kura_tm_my_load();
 	});
-	
+
 });
 
 // -----------------------------------------------------
@@ -41,13 +41,13 @@ jQuery(document).ready(function(){
 // -------------------------------------------------
 
 function kura_tm_nav_bg(){
-	
+
 	"use strict";
-	
+
 	jQuery(window).on('scroll',function(){
 		var menu	 		= jQuery('.kura_tm_topbar');
 		var WinOffset		= jQuery(window).scrollTop();
-		
+
 		if(WinOffset >= 100){
 			menu.addClass('animate');
 		}else{
@@ -67,7 +67,7 @@ jQuery('.anchor_nav').onePageNav();
 // -----------------------------------------------------
 
 function kura_tm_trigger_menu(){
-	
+
 	"use strict";
 
 	var audio1			= jQuery('#audio1');
@@ -96,7 +96,7 @@ function kura_tm_trigger_menu(){
 		}
 		return false;
 	});
-	
+
 	mobileMenuList.on('click',function(){
 		jQuery('.trigger .hamburger').removeClass('is-active');
 		mobileMenu.slideUp();
@@ -109,7 +109,7 @@ function kura_tm_trigger_menu(){
 // -----------------------------------------------------
 
 function kura_tm_down(){
-	
+
 	"use strict";
 	var topbar		= jQuery('.kura_tm_topbar').outerHeight();
 	jQuery('.kura_tm_hero .down a').on('click',function(){
@@ -128,7 +128,7 @@ function kura_tm_down(){
 
 function kura_tm_hero_image(){
 	"use strict";
-	
+
 	var FixedImage	= jQuery('.kura_tm_hero .right .image .main').data('img-url');
 	var wrapper	= jQuery('.kura_tm_hero .services ul');
 	var list	= wrapper.find('li a');
@@ -148,13 +148,13 @@ function kura_tm_hero_image(){
 // -------------------------------------------------
 
 function kura_tm_service_popup(){
-	
+
 	"use strict";
-	
+
 	var modalBox		= jQuery('.kura_tm_modalbox');
 	var button			= jQuery('.kura_tm_hero .services ul li a');
 	var closePopup		= modalBox.find('.close');
-	
+
 	button.on('click',function(){
 		var element = jQuery(this);
 		var elImage	= element.find('.image').attr('src');
@@ -179,13 +179,13 @@ function kura_tm_service_popup(){
 // -------------------------------------------------
 
 function kura_tm_news_popup(){
-	
+
 	"use strict";
-	
+
 	var modalBox		= jQuery('.kura_tm_modalbox');
 	var button			= jQuery('.kura_tm_news .list_inner .kura_tm_full_link');
 	var closePopup		= modalBox.find('.close');
-	
+
 	button.on('click',function(){
 		var element = jQuery(this);
 		var parent 	= element.closest('.list_inner');
@@ -211,13 +211,13 @@ function kura_tm_news_popup(){
 // -------------------------------------------------
 
 function kura_tm_portfolio_popup(){
-	
+
 	"use strict";
-	
+
 	var modalBox		= jQuery('.kura_tm_modalbox');
 	var button			= jQuery('.kura_tm_portfolio .list_inner .portfolio_popup');
 	var closePopup		= modalBox.find('.close');
-	
+
 	button.on('click',function(){
 		var element = jQuery(this);
 		var parent 	= element.closest('.list_inner');
@@ -243,9 +243,9 @@ function kura_tm_portfolio_popup(){
 // -------------------------------------------------
 
 function tdProgress(container){
-	
+
 	"use strict";
-		
+
 	container.find('.progress_inner').each(function() {
 		var progress 		= jQuery(this);
 		var pValue 			= parseInt(progress.data('value'), 10);
@@ -262,7 +262,7 @@ jQuery('.dodo_progress').each(function() {
 	"use strict";
 
 	var pWrap 			= jQuery(this);
-	pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
+	pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});
 });
 
 // -----------------------------------------------------
@@ -270,12 +270,12 @@ jQuery('.dodo_progress').each(function() {
 // -----------------------------------------------------
 
 function kura_tm_preloader(){
-	
+
 	"use strict";
-	
+
 	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 	var preloader = $('#preloader');
-	
+
 	if (!isMobile) {
 		setTimeout(function() {
 			preloader.addClass('preloaded');
@@ -294,9 +294,9 @@ function kura_tm_preloader(){
 // -----------------------------------------------------
 
 function kura_tm_my_load(){
-	
+
 	"use strict";
-	
+
 	var speed	= 500;
 	setTimeout(function(){kura_tm_preloader();},speed);
 	setTimeout(function(){jQuery('body').addClass('opened');},speed+2000);
@@ -308,9 +308,9 @@ function kura_tm_my_load(){
 
 function kura_tm_cursor(){
     "use strict";
-	
+
 	var myCursor	= jQuery('.mouse-cursor');
-	
+
 	if(myCursor.length){
 		if ($("body")) {
         const e = document.querySelector(".cursor-inner"),
@@ -333,11 +333,11 @@ function kura_tm_cursor(){
 // -----------------------------------------------------
 
 function kura_tm_imgtosvg(){
-	
+
 	"use strict";
-	
+
 	jQuery('img.svg').each(function(){
-		
+
 		var jQueryimg 		= jQuery(this);
 		var imgClass		= jQueryimg.attr('class');
 		var imgURL			= jQueryimg.attr('src');
@@ -367,7 +367,7 @@ function kura_tm_imgtosvg(){
 // -----------------------------------------------------
 
 function kura_tm_popup(){
-	
+
 	"use strict";
 
 	jQuery('.gallery_zoom').each(function() { // the containers for all your galleries
@@ -392,11 +392,11 @@ function kura_tm_popup(){
 			fixedContentPos: false
 		});
 	});
-	
+
 	jQuery('.soundcloude_link').magnificPopup({
 	  type : 'image',
 	   gallery: {
-		   enabled: true, 
+		   enabled: true,
 	   },
 	});
 }
@@ -406,11 +406,11 @@ function kura_tm_popup(){
 // -----------------------------------------------------
 
 function kura_tm_data_images(){
-	
+
 	"use strict";
-	
+
 	var data			= jQuery('*[data-img-url]');
-	
+
 	data.each(function(){
 		var element			= jQuery(this);
 		var url				= element.data('img-url');
@@ -423,44 +423,44 @@ function kura_tm_data_images(){
 // -----------------------------------------------------
 
 function kura_tm_contact_form(){
-	
+
 	"use strict";
-	
+
 	jQuery(".contact_form #send_message").on('click', function(){
-		
+
 		var name 		= jQuery(".contact_form #name").val();
 		var email 		= jQuery(".contact_form #email").val();
 		var message 	= jQuery(".contact_form #message").val();
 		var subject 	= jQuery(".contact_form #subject").val();
 		var success     = jQuery(".contact_form .returnmessage").data('success');
-	
+
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-		//checking for blank fields	
+		//checking for blank fields
 		if(name===''||email===''||message===''){
-			
+
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
-				
+			jQuery.post("html/modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
+
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
-				
-				
+
+
 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);
 				}else{
 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
 				}
-				
+
 				if(data===""){
 					jQuery("#contact_form")[0].reset();//To reset form fields on success
 				}
-				
+
 			});
 		}
-		return false; 
+		return false;
 	});
 }
 
@@ -470,7 +470,7 @@ function kura_tm_contact_form(){
 
 function kura_tm_swiper(){
 	"use strict";
-	
+
 	$('.kura_tm_portfolio .portfolio_list,.kura_tm_news .news_list').each(function(){
 		var element 	= $(this);
 		var container 	= element.find('.swiper-container');
@@ -482,12 +482,12 @@ function kura_tm_swiper(){
 			autoplay: {
 				delay: 6000,
 			},
-			
+
 			navigation: {
 				nextEl: '.my_next',
 				prevEl: '.my_prev',
 			  },
-			
+
 			pagination: {
 				el: '.kura_tm_swiper_progress',
 				type: 'custom', // progressbar
@@ -526,7 +526,7 @@ function kura_tm_swiper(){
 		});
 	});
 	kura_tm_imgtosvg();
-	
+
 }
 
 // -----------------------------------------------------
@@ -534,19 +534,19 @@ function kura_tm_swiper(){
 // -----------------------------------------------------
 
 function kura_tm_jarallax(){
-	
+
 	"use strict";
-	
+
 	jQuery('.jarallax').each(function(){
 		var element			= jQuery(this);
 		var	customSpeed		= element.data('speed');
-		
+
 		if(customSpeed !== "undefined" && customSpeed !== ""){
 			customSpeed = customSpeed;
 		}else{
 			customSpeed 	= 0.5;
 		}
-		
+
 		element.jarallax({
 			speed: customSpeed,
 			automaticResize: true,
