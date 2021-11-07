@@ -51,6 +51,24 @@ img.svg{
 a{
 	text-decoration: none;
 }
+
+.skill{
+	color: #ff4522;
+}
+
+.resume{
+	text-decoration: none;
+	color: white;
+	border: 1px solid #6f6f6f;
+	border-radius: 5px;
+	padding: 15px;
+	transition: background-color 300ms;
+}
+
+.resume:hover{
+	background-color: #ff4522;
+}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #6f6f6f;
 }
