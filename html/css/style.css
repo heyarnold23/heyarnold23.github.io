@@ -44,6 +44,9 @@ svg{
 	width: 15px;
 	height: 15px;
 }
+
+
+
 img.svg{
 	width: 15px;
 	height: 15px;
@@ -60,6 +63,8 @@ a.linkedin{
 	height: 15%;
     color: #ff4522;
 }
+
+
 a{
 	text-decoration: none;
 }
@@ -995,6 +1000,10 @@ body.opened .kura_tm_hero .down{
 	font-weight: 700;
 	margin-bottom: 4px;
 }
+.kura_tm_portfolio .portfolio_list .details h3:hover{
+    color: #ff4522;
+
+}
 .kura_tm_portfolio .portfolio_list .details span{
 	font-family: "Poppins";
 }
@@ -1015,6 +1024,39 @@ body.opened .kura_tm_hero .down{
 	    -ms-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
+}
+.kura_tm_portfolio .portfolio_list .image .smallGit{
+	position: absolute;
+	top: 40px;
+	right: 39px;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	color: #000;
+	opacity: 0;
+	visibility: hidden;
+	display: block;
+	height: 15%;
+	width: 15%;
+	background-image: url("https://i.ibb.co/k3hZv9V/github-PNG83.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.kura_tm_portfolio .portfolio_list .image .smallGit:hover{
+    transform:scale(1.1);
+}
+
+.kura_tm_portfolio .portfolio_list .list_inner:hover .image .smallGit{
+	opacity: 1;
+	visibility: visible;
 }
 .kura_tm_portfolio .portfolio_list .list_inner:hover .image .svg{
 	opacity: 1;
