@@ -82,6 +82,104 @@ a{
 	transition: background-color 300ms;
 }
 
+.skillsDiv{
+	display: flex;
+	flex-wrap: wrap;
+	height: 80%;
+	gap: 10px;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+.skillsIconshtml{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/mNzcHvn/512px-HTML5-logo-and-wordmark-svg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.skillsIconsCSS{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/FWLCL8s/1200px-CSS3-logo-and-wordmark-svg.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsJS{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/d41gTNx/1024px-Unofficial-Java-Script-logo-2-svg.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsPython{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/gJ5qkCm/1024px-Python-logo-notext-svg.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsReact{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/yhvnKZm/1280px-React-icon-svg.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsRedux{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/Njdpqhz/Redux.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsExpress{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/qjdgG8g/expressjs-icon-1.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsFlask{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/rd1wNfn/98-985032-flask-logo-flask-python-icon.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsSequelize{
+	width: 125px;
+	height: 125px;
+	background-image: url("https://i.ibb.co/yhkP758/sequelizejs-logo-icon-167998-2.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsSQLALC{
+	width: 125px;
+	height: 125px;
+	background-image: url("https://i.ibb.co/KKLVmKK/eca35254-a2db-47a8-850b-2678f7f8bc09.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.skillsIconsPostgreSQL{
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.ibb.co/xGtbjmd/postgresql-11-1175122.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .resume:hover{
 	background-color: #ff4522;
 }
